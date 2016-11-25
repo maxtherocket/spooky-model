@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/maxtherocket/spooky-model",
   "dependencies": {
+    "lodash": "^4.17.2",
     "signals": "~1.0.0",
     "traverse": "~0.6.6"
   },
