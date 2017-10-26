@@ -1,6 +1,7 @@
 var Signal = require('signals').Signal;
 var traverse = require('traverse');
-var _ = require('lodash/object');
+var get = require('lodash/get');
+
 
 function localize(obj, lang) {
     if (Array.isArray(obj)) {
@@ -77,7 +78,7 @@ var SpookyModel = {
 
     get: function(path) {
         var content = localizeModel(this.data, this.language);
-        return _.get(content, path, 'default');
+        return get(content, path, 'default');
     }
 
 }
